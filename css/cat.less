@@ -1,0 +1,509 @@
+.cat-wrapper {
+  width: 10.125rem;
+  //background-color: red;
+  //height: 15rem;
+  margin: 5rem auto;
+  position: relative;
+  //头部
+  .head {
+    width: 10rem;
+    height: 9.375rem;
+    border: 1px solid #555;
+    border-radius: 4.7rem;
+    box-shadow: -0.15rem 0.3rem 0.45rem rgba(0, 0, 0, .45);
+    background: -webkit-radial-gradient(right top, #fff 10%, #07bbee 20%, #10a6ce 75%, #000);
+    background: -moz-radial-gradient(right top, #fff 10%, #07bbee 20%, #10a6ce 75%, #000);
+    background: -ms-radial-gradient(right top, #fff 10%, #07bbee 20%, #10a6ce 75%, #000);
+  }
+  //眼睛
+  .eyes {
+    position: relative;
+    z-index: 3;
+    .eye {
+      position: absolute;
+      top: 1.25rem;
+      width: 2.25rem;
+      height: 2.56rem;
+      background-color: #fff;
+      border: 1px solid #000;
+      border-radius: 1rem;
+    }
+    .black {
+      width: 0.5rem;
+      height: 0.5rem;
+      background-color: #000;
+      border-radius: 50%;
+      position: absolute;
+      top: 1.25rem;
+      -webkit-animation: eyemove 3s linear infinite;
+      -moz-animation: eyemove 3s linear infinite;
+      -ms-animation: eyemove 3s linear infinite;
+      -o-animation: eyemove 3s linear infinite;
+      animation: eyemove 3s linear infinite;
+    }
+    .eye-left {
+      left: 2.56rem;
+    }
+    .eye-right {
+      left: 4.875rem;
+    }
+    .bleft {
+      left: 1.56rem;
+    }
+    .bright {
+      left: 0.2rem;
+    }
+  }
+  //脸部
+  .face {
+    position: relative;
+    z-index: 2;
+    .white {
+      width: 8.28rem;
+      height: 6.1rem;
+      position: absolute;
+      top: 2.34rem;
+      left: 0.78rem;
+      border-radius: 4.69rem;
+      background: -webkit-radial-gradient(right top, #fff 75%, #eee 80%, #999 90%, #444);
+      background: -moz-radial-gradient(right top, #fff 75%, #eee 80%, #999 90%, #444);
+      background: -ms-radial-gradient(right top, #fff 75%, #eee 80%, #999 90%, #444);
+    }
+    //鼻子
+    .nose{
+      width: 1rem;
+      height: 1rem;
+      position: absolute;
+      top: 3.44rem;
+      left: 4.375rem;
+      border-radius: 50%;
+      border: 1px solid #000;
+      background-color: #c93300;
+      z-index: 3;
+      .light{
+        width: 0.3rem;
+        height: 0.3rem;
+        border-radius: 50%;
+        box-shadow: 0.6rem 0.25rem 0.16rem #fff;
+      }
+    }
+    .nose_line{
+      width: 2px;
+      height: 3.125rem;
+      position: absolute;
+      top: 4.47rem;
+      left: 4.84rem;
+      background-color: #333;
+      z-index: 3;
+    }
+    //嘴巴
+    .mouth{
+      width: 6.875rem;
+      height: 12.5rem;
+      position: absolute;
+      top:-5rem;
+      left: 1.4rem;
+      border-bottom: 2px solid #333;
+      border-radius: 3.75rem;
+
+    }
+    //胡须
+    .whiskers{
+      width: 6.875rem;
+      height: 2.5rem;
+      position: absolute;
+      top: 3.75rem;
+      left: 1.4rem;
+      background-color: #fff;
+      border-radius: 0.5rem;
+      z-index: 2;
+      //胡子的公共样式
+      .whisker{
+        width:1.875rem;
+        height: 1px;
+        position: absolute;
+        background: #333;
+        z-index: 2;
+      }
+      //右上胡子
+      .rtop{
+        left: 5.16rem;
+        top: 0.78rem;
+      }
+      //右中胡子
+      .rmiddle{
+        left: 5.2rem;
+        top: 1.4rem;
+      }
+      //右下胡子
+      .rbottom{
+        left: 5.16rem;
+        top: 2rem;
+      }
+      //左上胡子
+      .ltop{
+        left: 0;
+        top:  0.78rem;
+      }
+      //左中胡子
+      .lmiddle{
+        left: -1px;
+        top: 1.4rem;
+      }
+      //左下胡子
+      .lbottom{
+        left: 0;
+        top:  2rem;
+      }
+      //胡子旋转
+      .r160{
+        -webkit-transform: rotate(160deg);
+        -moz-transform: rotate(160deg);
+        -ms-transform: rotate(160deg);
+        -o-transform: rotate(160deg);
+        transform: rotate(160deg);
+      }
+      .r200{
+        -webkit-transform: rotate(200deg);
+        -moz-transform: rotate(200deg);
+        -ms-transform: rotate(200deg);
+        -o-transform: rotate(200deg);
+        transform: rotate(200deg);
+      }
+    }
+  }
+  //脖子和铃铛
+  .choker{
+    width: 7.19rem;
+    height: 0.625rem;
+    background: #c40;
+    //线性渐变 让围巾看上去更自然
+    background: -webkit-gradient(linear, left top, left bottom, from(#c40), to(#800400));
+    background: -moz-linear-gradient(center top, #c40, #800400);
+    background: -ms-linear-gradient(center top, #c40, #800400);
+    border: 1px solid #000;
+    border-radius: 0.31rem;
+    position: relative;
+    top: -1.25rem;
+    left: 1.4rem;
+    z-index: 4;
+    .bell{
+      width: 1.25rem;
+      height: 1.25rem;
+      position: absolute;
+      top: 0.15rem;
+      left: 2.81rem;
+      border: 1px solid #000;
+      border-radius: 50%;
+      background-color: #f9f12a;
+      background: -webkit-gradient(linear, left top, left bottom, from(#f9f12a), color-stop(0.5, #e9e11a), to(#a9a100));
+      background: -moz-linear-gradient(top, #f9f12a, #e9e11a 75%, #a9a100);
+      background: -ms-linear-gradient(top, #f9f12a, #e9e11a 75%, #a9a100);
+      box-shadow:  -0.15rem 0.15rem 0.3rem rgba(0, 0, 0, 0.25);
+      .bell_line{
+        width: 1.125rem;
+        height: 1px;
+        background: #f9f12a;
+        border: 1px solid #333;
+        border-radius: 1px 1px 0 0;
+        position: absolute;
+        top: 0.3rem;
+      }
+      .bell_circle{
+        width: 0.37rem;
+        height: 0.3rem;
+        position: absolute;
+        top:0.6rem;
+        left: 0.44rem;
+        background: #000;
+        border-radius: 0.15rem;
+      }
+      .bell_under{
+        width: 0.1rem;
+        height: 0.46rem;
+        position: absolute;
+        top:0.84rem;
+        left: 0.56rem;
+        background: #000;
+      }
+      .bell_light{
+        width: 0.375rem;
+        height: 0.375rem;
+        border-radius: 50%;
+        box-shadow: 0.7rem 0.25rem 0.15rem #fff;
+      }
+    }
+  }
+  //身体
+  .body{
+    position: relative;
+    .tummy{
+      width: 6.875rem;
+      height: 5.16rem;
+      position: absolute;
+      //top: 8.28rem;
+      left: 1.56rem;
+      top: -1.375rem;
+      background: #07beea;
+      background: -webkit-gradient(linear, right top, left top, from(#07beea), color-stop(0.5, #0073b3), color-stop(0.75, #00b0e0), to(#0096be));
+      background: -moz-linear-gradient(right center, #07beea, #0073b3 50%, #00b0e0 75%, #0096be 100%);
+      background: -ms-linear-gradient(right center, #07beea, #0073b3 50%, #00b0e0 75%, #0096be 100%);
+      border: 1px solid #333;
+    }
+    .wraps{
+      width: 5.31rem;
+      height: 5.31rem;
+      background: #fff;
+      background: -webkit-gradient(linear, right top, left bottom, from(#fff), color-stop(0.75, #fff), color-stop(0.83, #eee), color-stop(0.90, #999), color-stop(0.95, #444), to(#000));
+      background: -moz-linear-gradient(right top, #fff, #fff 75%, #eee 83%, #999 90%, #444 95%, #000);
+      background: -ms-linear-gradient(right top, #fff, #fff 75%, #eee 83%, #999 90%, #444 95%, #000);
+      border: 1px solid #000;
+      border-radius: 50%;
+      position: absolute;
+      left: 2.25rem;
+      top: -2.25rem;
+    }
+    .pocket{
+      width: 4.06rem;
+      height: 4.06rem;
+      position: absolute;
+      top: -1.625rem;;
+      left: 2.875rem;
+      border-radius: 50% ;
+      background: #fff;
+      background: -webkit-gradient(linear, right top, left bottom, from(#fff), color-stop(0.70, #fff), color-stop(0.75, #f8f8f8), color-stop(0.80, #eee), color-stop(0.88, #ddd), to(#fff));
+      background: -moz-linear-gradient(right top, #fff, #fff 70%, #f8f8f8 75%, #eee 80%, #ddd 88%, #fff);
+      background: -ms-linear-gradient(right top, #fff, #fff 70%, #f8f8f8 75%, #eee 80%, #ddd 88%, #fff);
+      border: 1px solid #000;
+    }
+    .pocket_mask{
+      width: 4.2rem;
+      height: 2rem;
+      position: absolute;
+      top: -1.5rem;
+      left:  2.875rem;
+      background: #fff;
+      border-bottom: 1px solid #000;
+    }
+  }
+  //手
+  .hand_right,.hand_left{
+    width: 3.125rem;
+    height: 3.125rem;
+    position: absolute;
+    top: 8.625rem;
+  }
+
+
+  //胳膊
+  .arm{
+    top: 0.5rem;
+    width: 2.5rem;
+    height: 1.56rem;
+    background: #07beea;
+    background: -webkit-gradient(linear, left top, left bottom, from(#07beea), color-stop(0.85, #07beea), to(#555));
+    background: -moz-linear-gradient(center top, #07BEEA, #07BEEA 85%, #555);
+    background: -ms-linear-gradient(center top, #07BEEA, #07BEEA 85%, #555);
+    border: 1px solid #000000;
+    position: relative;
+    z-index: -1;
+  }
+  //手掌
+  .circle{
+    width: 1.875rem;
+    height: 1.875rem;
+    position: absolute;
+    top: 1rem;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background: #fff;
+    background: -webkit-gradient(linear, right top, left bottom, from(#fff), color-stop(0.5, #fff), color-stop(0.70, #eee), color-stop(0.8, #ddd), to(#999));
+    background: -moz-linear-gradient(right top, #fff, #fff 50%, #eee 70%, #ddd 80%, #999);
+    background: -ms-linear-gradient(right top, #fff, #fff 50%, #eee 70%, #ddd 80%, #999);
+  }
+  .arm_rewrite{
+    height:1.4rem;
+    width: 0.15rem;
+    position: relative;
+    top: -1.4rem;
+
+  }
+  .hand_right{
+    left: 7.75rem;
+    .arm{
+      box-shadow: -0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.35);
+      -webkit-transform: rotate(35deg);
+      -moz-transform: rotate(35deg);
+      -ms-transform: rotate(35deg);
+      -o-transform: rotate(35deg);
+      transform: rotate(35deg);
+    }
+    .circle{
+      left: 1.25rem;
+    }
+    .arm_rewrite{
+      background: #07beea;
+      left: 0.69rem;
+    }
+  }
+  .hand_left{
+    left: -0.5rem;
+    .arm{
+      background: #0096be;
+      box-shadow: 5px -7px 10px rgba(0, 0, 0, 0.25);
+      -webkit-transform: rotate(145deg);
+      -moz-transform: rotate(145deg);
+      -ms-transform: rotate(145deg);
+      -o-transform: rotate(145deg);
+      transform: rotate(145deg);
+    }
+    .circle{
+      left: -0.625rem;
+    }
+    .arm_rewrite{
+      background:#0096be;
+      left: 2.06rem;
+    }
+  }
+  //脚
+  .foots{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    //background-color: pink;
+    .foot{
+      width: 3.9rem;
+      height: 1rem;
+      background: #fff;
+      background: -webkit-gradient(linear, right top, left bottom, from(#fff), color-stop(0.75, #fff), color-stop(0.85, #eee), to(#999));
+      background: -moz-linear-gradient(right top, #fff, #fff 75%, #eee 85%, #999);
+      background: -ms-linear-gradient(right top, #fff, #fff 75%, #eee 85%, #999);
+      border: 1px solid #333;
+      border-radius: 2.5rem 1.875rem 1.875rem 1.25rem;
+      box-shadow: -0.19rem 0 0.3rem rgba(0, 0, 0, 0.35);
+      position: absolute;
+      top: 3.75rem;
+    }
+    .left{
+      left: 0.875rem;
+    }
+    .right{
+      left: 5rem;
+    }
+    //双脚之间的缝隙，加阴影使用立体感
+    .foot_rewrite{
+      width: 0.625rem;
+      height: 0.4rem;
+      position: absolute;
+      top: 3.6rem;
+      left : 4.625rem;
+      background: #fff;
+      background: -webkit-gradient(linear, right top, left bottom, from(#666), color-stop(0.83, #fff), to(#fff));
+      background: -moz-linear-gradient(right top, #666, #fff 83%, #fff);
+      background: -ms-linear-gradient(right top, #666, #fff 83%, #fff);
+      border: 1px solid #000;
+      border-bottom: none;
+      border-radius: 1.25rem 1.25rem 0 0;
+    }
+  }
+}
+
+//眼珠转动
+@keyframes eyemove {
+  70% {
+    margin: 0;
+  }
+  80% {
+    margin: -0.7rem 0 0 0;
+  }
+  85% {
+    margin: -0.7rem 0 0 0.15rem;
+  }
+  90% {
+    margin: -0.7rem 0.3rem 0 0;
+  }
+  93% {
+    margin: -0.7rem 0 0 0;
+  }
+
+  96% {
+    margin: 0;
+  }
+}
+
+@-webkit-keyframes eyemove {
+  70% {
+    margin: 0 0 0 0;
+  }
+  80% {
+    margin: -22px 0 0 0;
+  }
+
+  85% {
+    margin: -22px 0 0 5px;
+  }
+
+  90% {
+    margin: -22px 10px 0 0;
+  }
+
+  93% {
+    margin: -22px 0 0 0;
+  }
+
+  96% {
+    margin: 0 0 0 0;
+  }
+}
+
+@-moz-keyframes eyemove {
+  70% {
+    margin: 0 0 0 0;
+  }
+
+  80% {
+    margin: -22px 0 0 0;
+  }
+
+  85% {
+    margin: -22px 0 0 5px;
+  }
+
+  90% {
+    margin: -22px 10px 0 0;
+  }
+
+  93% {
+    margin: -22px 0 0 0;
+  }
+
+  96% {
+    margin: 0 0 0 0;
+  }
+}
+
+@-o-keyframes eyemove {
+  70% {
+    margin: 0 0 0 0;
+  }
+
+  80% {
+    margin: -22px 0 0 0;
+  }
+
+  85% {
+    margin: -22px 0 0 5px;
+  }
+
+  90% {
+    margin: -22px 10px 0 0;
+  }
+
+  93% {
+    margin: -22px 0 0 0;
+  }
+
+  96% {
+    margin: 0 0 0 0;
+  }
+}

@@ -1,0 +1,144 @@
+.beat_heart{
+  background: #ffa5a5;
+  background: linear-gradient(to bottom, #ffa5a5 0%,#ffd3d3 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from( #ffa5a5), to(#ffd3d3));
+  background: -moz-linear-gradient(center top,  #ffa5a5, #ffd3d3);
+  background: -ms-linear-gradient(center top,  #ffa5a5, #ffd3d3);
+  .chest{
+    width: 10rem;
+    height: 10rem;
+    margin: 5rem auto;
+    position: relative;
+    .heart{
+      position: absolute;
+      animation: beat 0.7s ease infinite;
+      -webkit-animation: beat 0.7s ease infinite;
+      -moz-animation: beat 0.7s ease infinite;
+      -ms-animation: beat 0.7s ease infinite;
+      -o-animation: beat 0.7s ease infinite;
+    }
+    .side{
+      width: 4.4rem;
+      height: 4.4rem;
+      top:2rem;
+      border-radius: 50%;
+      background: linear-gradient(-90deg, #F50A45 0%, #d5093c 40%);
+      background: -webkit-gradient(linear, right top,left  top, from(#F50A45), color-stop(0.4, #d5093c));
+      background: -moz-linear-gradient(center right, #F50A45, #d5093c 40%, #d5093c);
+      background: -ms-linear-gradient(center right, #F50A45, #d5093c 40%, #d5093c);
+    }
+    .left{
+      left: 1.24rem;
+      z-index: 2;
+    }
+    .right{
+      right: 1.24rem;
+    }
+    .center{
+      width: 4.2rem;
+      height: 4.2rem;
+      bottom: 2rem;
+      left: 2.9rem;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      background: linear-gradient(-45deg, #B80734 0%, #d5093c 40%);
+    }
+  }
+}
+
+//¶¯»­
+@keyframes beat {
+  0%{
+    transform: scale(1) rotate(225deg);
+    -webkit-transform: scale(1) rotate(225deg);
+    -moz-transform:  scale(1) rotate(225deg);
+    -o-transform:  scale(1) rotate(225deg);
+    box-shadow: 0 0 0.8rem #d5093c;
+  }
+  50%{
+    transform: scale(1.1) rotate(225deg);
+    -webkit-transform: scale(1.1) rotate(225deg);
+    -moz-transform:  scale(1.1) rotate(225deg);
+    -o-transform:  scale(1.1) rotate(225deg);
+    box-shadow: 0 0 1.6rem #d5093c;
+  }
+  100%{
+    transform: scale(1) rotate(225deg);
+    -webkit-transform: scale(1) rotate(225deg);
+    -moz-transform:  scale(1) rotate(225deg);
+    -o-transform:  scale(1) rotate(225deg);
+    box-shadow: 0 0 0.8rem #d5093c;
+  }
+}
+@-webkit-keyframes beat {
+  0%{
+    transform: scale(1) rotate(225deg);
+    -webkit-transform: scale(1) rotate(225deg);
+    -moz-transform:  scale(1) rotate(225deg);
+    -o-transform:  scale(1) rotate(225deg);
+    box-shadow: 0 0 0.8rem #d5093c;
+  }
+  50%{
+    transform: scale(1.1) rotate(225deg);
+    -webkit-transform: scale(1.1) rotate(225deg);
+    -moz-transform:  scale(1.1) rotate(225deg);
+    -o-transform:  scale(1.1) rotate(225deg);
+    box-shadow: 0 0 1.6rem #d5093c;
+  }
+  100%{
+    transform: scale(1) rotate(225deg);
+    -webkit-transform: scale(1) rotate(225deg);
+    -moz-transform:  scale(1) rotate(225deg);
+    -o-transform:  scale(1) rotate(225deg);
+    box-shadow: 0 0 0.8rem #d5093c;
+  }
+}
+@-o-keyframes beat {
+  0%{
+    transform: scale(1) rotate(225deg);
+    -webkit-transform: scale(1) rotate(225deg);
+    -moz-transform:  scale(1) rotate(225deg);
+    -o-transform:  scale(1) rotate(225deg);
+    box-shadow: 0 0 0.8rem #d5093c;
+  }
+  50%{
+    transform: scale(1.1) rotate(225deg);
+    -webkit-transform: scale(1.1) rotate(225deg);
+    -moz-transform:  scale(1.1) rotate(225deg);
+    -o-transform:  scale(1.1) rotate(225deg);
+    box-shadow: 0 0 1.6rem #d5093c;
+  }
+  100%{
+    transform: scale(1) rotate(225deg);
+    -webkit-transform: scale(1) rotate(225deg);
+    -moz-transform:  scale(1) rotate(225deg);
+    -o-transform:  scale(1) rotate(225deg);
+    box-shadow: 0 0 0.8rem #d5093c;
+  }
+}
+@-moz-keyframes beat {
+  0%{
+    transform: scale(1) rotate(225deg);
+    -webkit-transform: scale(1) rotate(225deg);
+    -moz-transform:  scale(1) rotate(225deg);
+    -o-transform:  scale(1) rotate(225deg);
+    box-shadow: 0 0 0.8rem #d5093c;
+  }
+  50%{
+    transform: scale(1.1) rotate(225deg);
+    -webkit-transform: scale(1.1) rotate(225deg);
+    -moz-transform:  scale(1.1) rotate(225deg);
+    -o-transform:  scale(1.1) rotate(225deg);
+    box-shadow: 0 0 1.6rem #d5093c;
+  }
+  100%{
+    transform: scale(1) rotate(225deg);
+    -webkit-transform: scale(1) rotate(225deg);
+    -moz-transform:  scale(1) rotate(225deg);
+    -o-transform:  scale(1) rotate(225deg);
+    box-shadow: 0 0 0.8rem #d5093c;
+  }
+}
+

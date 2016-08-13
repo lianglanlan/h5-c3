@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title></title>
+    <link rel="stylesheet" href="./css/base.css"/>
+    <link rel="stylesheet" href="./css/swiper-3.3.1.min.css"/>
+    <link rel="stylesheet" href="./css/index.css"/>
+    <link rel="stylesheet/less" href="./css/cat.less"/>
+    <link rel="stylesheet/less" href="./css/pk.less"/>
+    <link rel="stylesheet/less" href="./css/music.less"/>
+    <link rel="stylesheet/less" href="./css/heart.less"/>
+    <link rel="stylesheet/less" href="./css/book.less"/>
+    <link rel="stylesheet/less" href="./css/cube.less"/>
+    <link rel="stylesheet/less" href="./css/universe.less"/>
+    <script src="js/less.js"></script>
+    <script src="js/swiper-3.3.1.min.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide books">
+            <div class="book">
+                <!--最后页-->
+                <div class="page page3">
+                    <p>第三页</p>
+                </div>
+                <div class="page page2">
+                    <p>第二页</p>
+                </div>
+                <div class="page page1">
+                    <p>第一页</p>
+                </div>
+                <div class="page cover">
+                    <p>翻页效果</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <!--外面盒子-->
+            <div class="cube">
+                <div class="box">
+                    <div class="piece piece1"></div>
+                    <div class="piece piece2"></div>
+                    <div class="piece piece3"></div>
+                    <div class="piece piece4"></div>
+                    <div class="piece piece5"></div>
+                    <div class="piece piece6"></div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <!--叮当猫-->
+            <div class="cat-wrapper">
+                <!--头部-->
+                <div class="head">
+                    <!--眼睛-->
+                    <div class="eyes">
+                        <div class="eye eye-left">
+                            <!--黑眼珠-->
+                            <div class="black bleft"></div>
+                        </div>
+                        <div class="eye eye-right">
+                            <div class="black bright"></div>
+                        </div>
+                    </div>
+                    <!--脸部-->
+                    <div class="face">
+                        <!--白色脸底-->
+                        <div class="white"></div>
+                        <!--鼻子-->
+                        <div class="nose">
+                            <!--鼻子高光部分-->
+                            <div class="light"></div>
+                        </div>
+                        <!--鼻子下的竖线-->
+                        <div class="nose_line"></div>
+                        <!--嘴巴-->
+                        <div class="mouth"></div>
+                        <!--胡须-->
+                        <div class="whiskers">
+                            <div class="whisker rtop r160"></div>
+                            <div class="whisker rmiddle"></div>
+                            <div class="whisker rbottom r200"></div>
+                            <div class="whisker ltop r200"></div>
+                            <div class="whisker lmiddle"></div>
+                            <div class="whisker lbottom r160"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--脖子和铃铛-->
+                <div class="choker">
+                    <!--铃铛-->
+                    <div class="bell">
+                        <div class="bell_line"></div>
+                        <div class="bell_circle"></div>
+                        <div class="bell_under"></div>
+                        <div class="bell_light"></div>
+                    </div>
+                </div>
+                <!--身体-->
+                <div class="body">
+                    <!--肚子-->
+                    <div class="tummy"></div>
+                    <!--肚兜-->
+                    <div class="wraps"></div>
+                    <!--口袋-->
+                    <div class="pocket"></div>
+                    <!--遮住一半口袋-->
+                    <div class="pocket_mask"></div>
+                </div>
+                <!--右手-->
+                <div class="hand_right">
+                    <!--手臂-->
+                    <div class="arm"></div>
+                    <!--手掌-->
+                    <div class="circle"></div>
+                    <!--手臂和身子交接处的线-->
+                    <div class="arm_rewrite"></div>
+                </div>
+                <div class="hand_left">
+                    <!--手臂-->
+                    <div class="arm"></div>
+                    <!--手掌-->
+                    <div class="circle"></div>
+                    <div class="arm_rewrite"></div>
+                </div>
+                <!--脚-->
+                <div class="foots">
+                    <!--脚之间的间隙-->
+                    <div class="foot_rewrite"></div>
+                    <!--左脚-->
+                    <div class="left foot"></div>
+                    <!--右脚-->
+                    <div class="right foot"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-slide beat_heart">
+            <div class="chest">
+                <div class="heart side left"></div>
+                <div class="heart center"></div>
+                <div class="heart side right"></div>
+            </div>
+        </div>
+        <div class="swiper-slide universe">
+            <ul>
+                <!--中间太阳-->
+                <li></li>
+                <!--最靠近太阳的一层-->
+                <li><span></span></li>
+                <!--第二层-->
+                <li><span></span></li>
+                <!--第三层-->
+                <li><span><span></span></span></li>
+                <!--第四层-->
+                <li><span></span></li>
+                <!--第五层-->
+                <li><span></span></li>
+                <!--第六层-->
+                <li><span><span></span></span></li>
+                <!--第七层-->
+                <li><span></span></li>
+                <!--第八层-->
+                <li><span></span></li>
+                <!--第九层-->
+                <li><span></span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+//        autoplay: 1000,//可选选项，自动滑动
+        direction: 'vertical',//Slides的滑动方向，可设置水平(horizontal)或垂直(vertical)。
+        width: window.innerWidth,
+        height: window.innerHeight,
+    })
+</script>
+</body>
+</html>
